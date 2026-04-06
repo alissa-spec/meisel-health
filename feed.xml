@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Meisel Health Resources</title>
+  <link>https://meiselhealth.com/resources/</link>
+  <description>Evidence-based guides on GLP-1 therapy, peptide protocols, and longevity medicine for women over 40. From Board-Certified Health Coach Alissa Meisel.</description>
+  <language>en-us</language>
+  <lastBuildDate>Sun, 06 Apr 2026 00:00:00 GMT</lastBuildDate>
+  <atom:link href="https://meiselhealth.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>What Are Peptides? A Complete Guide for Women Over 40</title>
+    <link>https://meiselhealth.com/resources/what-are-peptides.html</link>
+    <guid>https://meiselhealth.com/resources/what-are-peptides.html</guid>
+    <pubDate>Tue, 15 Jan 2025 00:00:00 GMT</pubDate>
+    <author>alissa@meiselhealth.com (Alissa Meisel)</author>
+    <category>Peptides</category>
+    <description>Learn what peptides are, how they work in the body, and which peptide protocols may benefit women over 40.</description>
+  </item>
+  <item>
+    <title>What Is GLP-1? What Every Woman Over 40 Should Know</title>
+    <link>https://meiselhealth.com/resources/what-is-glp1.html</link>
+    <guid>https://meiselhealth.com/resources/what-is-glp1.html</guid>
+    <pubDate>Tue, 15 Jan 2025 00:00:00 GMT</pubDate>
+    <author>alissa@meiselhealth.com (Alissa Meisel)</author>
+    <category>GLP-1</category>
+    <description>Understand how GLP-1 receptor agonist therapy works, what to expect, and who may be a candidate.</description>
+  </item>
+  <item>
+    <title>NAD+ for Women Over 40: What It Does, How It Works, and Who It's For</title>
+    <link>https://meiselhealth.com/resources/nad-plus-for-women.html</link>
+    <guid>https://meiselhealth.com/resources/nad-plus-for-women.html</guid>
+    <pubDate>Tue, 15 Jan 2025 00:00:00 GMT</pubDate>
+    <author>alissa@meiselhealth.com (Alissa Meisel)</author>
+    <category>NAD+</category>
+    <description>Explore what NAD+ does in the body, how it declines with age, and what NAD+ therapy may offer women over 40.</description>
+  </item>
+  <item>
+    <title>Sermorelin for Women Over 40: Benefits, Safety and What to Expect</title>
+    <link>https://meiselhealth.com/resources/sermorelin-for-women.html</link>
+    <guid>https://meiselhealth.com/resources/sermorelin-for-women.html</guid>
+    <pubDate>Tue, 15 Jan 2025 00:00:00 GMT</pubDate>
+    <author>alissa@meiselhealth.com (Alissa Meisel)</author>
+    <category>Sermorelin</category>
+    <description>Learn how sermorelin supports growth hormone production, body composition, sleep, and recovery for women over 40.</description>
+  </item>
+  <item>
+    <title>PT-141 for Women: What You Need to Know About Sexual Health After 40</title>
+    <link>https://meiselhealth.com/resources/pt-141-for-women.html</link>
+    <guid>https://meiselhealth.com/resources/pt-141-for-women.html</guid>
+    <pubDate>Tue, 15 Jan 2025 00:00:00 GMT</pubDate>
+    <author>alissa@meiselhealth.com (Alissa Meisel)</author>
+    <category>PT-141</category>
+    <description>Understand how PT-141 works differently from other treatments and who it may help with sexual health after 40.</description>
+  </item>
+  <item>
+    <title>Peptides vs HRT: Understanding Your Options After 40</title>
+    <link>https://meiselhealth.com/resources/peptides-vs-hrt.html</link>
+    <guid>https://meiselhealth.com/resources/peptides-vs-hrt.html</guid>
+    <pubDate>Tue, 15 Jan 2025 00:00:00 GMT</pubDate>
+    <author>alissa@meiselhealth.com (Alissa Meisel)</author>
+    <category>Peptides</category>
+    <description>Compare peptide therapy and hormone replacement therapy to understand which approach may be right for you.</description>
+  </item>
+  <item>
+    <title>GLP-1 and Muscle Loss: What Women Over 40 Need to Know</title>
+    <link>https://meiselhealth.com/resources/glp1-and-muscle-loss.html</link>
+    <guid>https://meiselhealth.com/resources/glp1-and-muscle-loss.html</guid>
+    <pubDate>Tue, 15 Jan 2025 00:00:00 GMT</pubDate>
+    <author>alissa@meiselhealth.com (Alissa Meisel)</author>
+    <category>GLP-1</category>
+    <description>Learn why muscle loss is a concern on GLP-1 therapy and how coaching helps preserve lean mass.</description>
+  </item>
+</channel>
+</rss>

@@ -1,0 +1,185 @@
+/* ============================================================
+   MEISEL HEALTH — DESIGN TOKENS v2
+   /css/tokens.css
+   Editorial Direction — Deep Forest + Gold
+   ============================================================ */
+
+:root {
+
+  /* ----------------------------------------------------------
+     COLORS — Primary Palette
+  ---------------------------------------------------------- */
+  --color-forest:           #072c26;
+  --color-forest-mid:       #0e574b;
+  --color-forest-light:     #1a7a6a;
+
+  --color-olive:            #c4ce62;
+  --color-olive-light:      #d4de82;
+  --color-olive-dark:       #a0a84e;
+
+  --color-cream:            #fef9f5;
+  --color-cream-deep:       #f3ede4;
+  --color-cream-darker:     #e8dfd2;
+
+  --color-white:            #ffffff;
+  --color-black:            #0f0f0f;
+
+  /* ----------------------------------------------------------
+     COLORS — Accent Palette (use sparingly)
+  ---------------------------------------------------------- */
+  --color-gold:             #c4ce62;
+  --color-gold-light:       #a9d11b;
+  --color-gold-dark:        #a0a84e;
+  --color-gold-subtle:      rgba(196, 206, 98, 0.12);
+  --color-gold-divider:     rgba(196, 206, 98, 0.25);
+
+  --color-magenta:          #f21572;
+  --color-magenta-dark:     #c4105e;
+
+  /* ----------------------------------------------------------
+     COLORS — Neutrals
+  ---------------------------------------------------------- */
+  --color-charcoal:         #46363f;
+  --color-stone:            #9e9189;
+  --color-stone-light:      #c4b8b0;
+
+  /* ----------------------------------------------------------
+     COLORS — Semantic Roles
+  ---------------------------------------------------------- */
+  --bg-page:                var(--color-cream);
+  --bg-section-dark:        var(--color-forest);
+  --bg-section-light:       var(--color-cream);
+  --bg-section-alt:         var(--color-cream-deep);
+  --bg-section-deep:        var(--color-charcoal);
+  --bg-accent-bar:          var(--color-olive);
+
+  --text-primary:           var(--color-black);
+  --text-on-dark:           var(--color-white);
+  --text-on-dark-muted:     rgba(255, 255, 255, 0.65);
+  --text-label:             var(--color-gold);
+  --text-emphasis:          var(--color-gold);
+  --text-secondary:         var(--color-stone);
+  --text-link:              var(--color-gold);
+
+  /* ----------------------------------------------------------
+     TYPOGRAPHY — Font Families
+  ---------------------------------------------------------- */
+  --font-display:   'Libre Caslon Display', Georgia, 'Times New Roman', serif;
+  --font-body:      'General Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-label:     'General Sans', 'Helvetica Neue', Arial, sans-serif;
+
+  /* ----------------------------------------------------------
+     TYPOGRAPHY — Size Scale
+  ---------------------------------------------------------- */
+  --text-2xs:   0.625rem;
+  --text-xs:    0.6875rem;
+  --text-sm:    0.875rem;
+  --text-base:  1rem;
+  --text-lg:    1.0625rem;
+  --text-xl:    1.125rem;
+  --text-2xl:   1.25rem;
+  --text-3xl:   1.375rem;
+  --text-4xl:   1.5rem;
+  --text-5xl:   2rem;
+  --text-6xl:   2.75rem;
+  --text-7xl:   3.375rem;
+  --text-8xl:   4rem;
+  --text-9xl:   6rem;
+
+  /* ----------------------------------------------------------
+     TYPOGRAPHY — Line Heights
+  ---------------------------------------------------------- */
+  --leading-none:       1.0;
+  --leading-tight:      1.05;
+  --leading-snug:       1.2;
+  --leading-normal:     1.5;
+  --leading-relaxed:    1.7;
+  --leading-loose:      1.8;
+
+  /* ----------------------------------------------------------
+     TYPOGRAPHY — Letter Spacing
+  ---------------------------------------------------------- */
+  --tracking-tight:     -0.02em;
+  --tracking-normal:    0em;
+  --tracking-wide:      0.06em;
+  --tracking-wider:     0.10em;
+  --tracking-widest:    0.15em;
+  --tracking-max:       0.20em;
+
+  /* ----------------------------------------------------------
+     TYPOGRAPHY — Font Weights
+  ---------------------------------------------------------- */
+  --weight-light:       300;
+  --weight-regular:     400;
+  --weight-medium:      500;
+  --weight-semibold:    600;
+  --weight-bold:        700;
+  --weight-black:       900;
+
+  /* ----------------------------------------------------------
+     SPACING
+  ---------------------------------------------------------- */
+  --space-1:    0.25rem;
+  --space-2:    0.5rem;
+  --space-3:    0.75rem;
+  --space-4:    1rem;
+  --space-5:    1.25rem;
+  --space-6:    1.5rem;
+  --space-8:    2rem;
+  --space-10:   2.5rem;
+  --space-12:   3rem;
+  --space-14:   3.5rem;
+  --space-16:   4rem;
+  --space-20:   5rem;
+  --space-24:   6rem;
+  --space-28:   7rem;
+  --space-32:   8rem;
+
+  /* ----------------------------------------------------------
+     LAYOUT
+  ---------------------------------------------------------- */
+  --container-max:        75rem;
+  --container-prose:      45rem;
+  --container-narrow:     35rem;
+  --section-pad-y:        6rem;
+  --section-pad-x:        4rem;
+
+  /* ----------------------------------------------------------
+     BORDERS & RADIUS
+  ---------------------------------------------------------- */
+  --radius-none:    0px;
+  --radius-sm:      4px;
+  --radius-md:      8px;
+  --radius-full:    9999px;
+
+  --border-thin:    1px;
+  --border-base:    1.5px;
+  --border-card:    4px;
+  --border-quote:   3px;
+
+  /* ----------------------------------------------------------
+     SHADOWS
+  ---------------------------------------------------------- */
+  --shadow-sm:      0 1px 4px rgba(19, 42, 30, 0.08);
+  --shadow-md:      0 4px 16px rgba(19, 42, 30, 0.12);
+  --shadow-lg:      0 12px 40px rgba(19, 42, 30, 0.16);
+  --shadow-guide:   0 8px 32px rgba(0, 0, 0, 0.28);
+  --shadow-nav:     0 2px 20px rgba(0, 0, 0, 0.35);
+
+  /* ----------------------------------------------------------
+     TRANSITIONS
+  ---------------------------------------------------------- */
+  --transition-fast:    150ms ease;
+  --transition-base:    200ms ease;
+  --transition-slow:    350ms ease;
+  --transition-reveal:  600ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ----------------------------------------------------------
+     Z-INDEX SCALE
+  ---------------------------------------------------------- */
+  --z-base:       0;
+  --z-raised:     10;
+  --z-overlay:    100;
+  --z-modal:      200;
+  --z-nav:        300;
+}

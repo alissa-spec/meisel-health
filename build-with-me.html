@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#072c26">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Primary Meta -->
+  <title>Build With Me — Meisel Health | EllieMD Partnership with Alissa Meisel</title>
+  <meta name="description" content="Build a health business with Alissa Meisel and EllieMD. Up to 40% commissions, peptide protocols, mentorship, and proven systems. For medical and non-medical professionals ready to build with purpose.">
+  <meta name="author" content="Alissa Meisel">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://meiselhealth.com/build-with-me.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Meisel Health">
+  <meta property="og:title" content="Build With Me — Meisel Health">
+  <meta property="og:description" content="A coaching track for health professionals who want to build their own practice is coming to Meisel Health. Book a free call to get on the list.">
+  <meta property="og:url" content="https://meiselhealth.com/build-with-me.html">
+  <meta property="og:image" content="https://meiselhealth.com/images/alissa/homepage.jpg">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Build With Me — Meisel Health">
+  <meta name="twitter:description" content="A coaching track for health professionals who want to build their own practice is coming to Meisel Health.">
+  <meta name="twitter:image" content="https://meiselhealth.com/images/alissa/homepage.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600,700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="images/brand/logo-400.jpg">
+
+  <style>
+    /* ============================================================
+       EDITORIAL TYPOGRAPHY OVERHAUL
+       ============================================================ */
+
+    /* EYEBROW LABELS */
+    .label {
+      font-size: 0.75rem !important;
+      font-weight: 700 !important;
+      letter-spacing: 6px !important;
+    }
+
+    /* SECTION HEADLINES */
+    h2 {
+      font-size: clamp(2.8rem, 6vw, 5rem) !important;
+      line-height: 0.95 !important;
+      letter-spacing: -2px !important;
+      text-transform: uppercase;
+    }
+
+    /* SUBHEADERS / TAGLINES */
+    .bwm-tagline {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.25rem;
+      line-height: 1.55;
+      color: var(--color-forest-mid);
+    }
+
+    /* PULLQUOTES */
+    blockquote {
+      font-family: var(--font-display) !important;
+      font-style: italic !important;
+      font-size: 1.3rem !important;
+      line-height: 1.5 !important;
+      border-left: 3px solid var(--color-gold) !important;
+      padding-left: 24px !important;
+      margin: 32px 0 !important;
+    }
+
+    /* BODY stays quiet */
+    .bwm-body { font-size: 1rem; font-weight: 400; line-height: 1.75; }
+
+    /* BUTTONS */
+    .btn-magenta, .btn-primary, .btn-ghost {
+      font-size: 0.78rem !important;
+      letter-spacing: 3px !important;
+      padding: 18px 32px !important;
+      height: auto !important;
+    }
+
+    /* CREDENTIAL CARDS */
+    .bwm-cred-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-bottom: 48px; }
+    .bwm-cred-grid h3 {
+      font-size: 1rem !important;
+      font-weight: 600 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 2px !important;
+      line-height: 1.3 !important;
+    }
+    .bwm-cred-grid > div { padding: 32px 24px; }
+
+    /* SECTION SPACING */
+    section { padding-top: 96px !important; padding-bottom: 96px !important; }
+
+    /* Hero: words dominant */
+    .about-hero { min-height: auto; padding-top: 72px !important; padding-bottom: 0 !important; }
+    .about-hero__content { width: 55%; padding: 48px 56px 48px 80px; }
+    .about-hero__image { width: 45%; }
+    .about-hero__headline { font-size: clamp(2.4rem, 5vw, 4rem) !important; letter-spacing: -2px !important; text-transform: none !important; }
+
+    /* About me photo */
+    .bwm-about-photo { flex: 0 0 420px; overflow: hidden; }
+
+    /* Team parallax */
+    .bwm-team-parallax { background-position: center top; }
+
+    /* Footer: compact */
+    .footer { padding: 36px 0 20px !important; }
+    .footer__inner { gap: 24px; }
+    .footer__brand-name { font-size: 16px; margin-bottom: 8px; }
+    .footer__tagline { font-size: 12px; }
+    .footer__nav-heading, .footer__compliance-heading { font-size: 8px; margin-bottom: 12px; }
+    .footer__nav-link { font-size: 11px; }
+    .footer__nav-list li { margin-bottom: 4px; }
+    .footer__compliance-text { font-size: 10px; }
+    .footer__bottom { margin-top: 20px; }
+    .footer__copyright { font-size: 9px; }
+
+    /* FAQ */
+    .faq__list { max-width: 720px; margin: 0 auto; }
+    .faq__item { border-bottom: 1px solid var(--color-gold-divider); }
+    .faq__item:first-child { border-top: 1px solid var(--color-gold-divider); }
+    .faq__question { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 24px 0; font-family: var(--font-body); font-weight: 600; font-size: 1rem; color: var(--color-black); text-align: left; cursor: pointer; background: none; border: none; line-height: 1.4; }
+    .faq__icon { flex-shrink: 0; font-family: var(--font-label); font-size: 22px; font-weight: 300; color: var(--color-gold); width: 32px; text-align: center; margin-left: 16px; }
+    .faq__answer { max-height: 0; overflow: hidden; transition: max-height 350ms ease; }
+    .faq__answer p { font-family: var(--font-body); font-size: 0.95rem; line-height: 1.8; color: var(--color-black); padding-bottom: 24px; }
+
+    /* STAT NUMBERS */
+    .bwm-stat strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      letter-spacing: -1px;
+      line-height: 1;
+      color: var(--color-gold);
+      margin-bottom: 6px;
+    }
+
+    /* ============================================================
+       MOBILE
+       ============================================================ */
+    @media (max-width: 768px) {
+      /* Hero: image stays right */
+      .about-hero { flex-direction: row !important; min-height: auto; }
+      .about-hero__content { width: 65% !important; padding: 28px 16px 28px 20px !important; }
+      .about-hero__headline { font-size: clamp(1.6rem, 7vw, 2.4rem) !important; line-height: 0.95 !important; text-transform: none !important; }
+      .about-hero__subhead { font-size: 0.8rem; margin-bottom: 16px; max-width: 100%; line-height: 1.5; }
+      .about-hero__image { width: 35% !important; height: auto !important; }
+      .about-hero .gold-rule--short { display: none; }
+
+      /* Eyebrows */
+      .label { font-size: 0.7rem !important; letter-spacing: 4px !important; }
+
+      /* Headlines */
+      h2 { font-size: clamp(2.4rem, 9vw, 4.5rem) !important; }
+
+      /* Subheaders */
+      .bwm-tagline { font-size: 1.05rem; }
+
+      /* Buttons full width */
+      .btn-magenta, .btn-primary, .btn-ghost { width: 100%; max-width: 360px; text-align: center; display: block; margin-left: auto; margin-right: auto; }
+      .about-hero .btn-magenta { width: auto; font-size: 0.65rem !important; padding: 12px 16px !important; }
+
+      /* Section padding */
+      section { padding: 64px 24px !important; }
+      .bwm-comp-wrap { padding: 0 24px; }
+
+      /* Cards stack */
+      .bwm-cred-grid { grid-template-columns: 1fr; gap: 16px; }
+
+      /* About photo center */
+      .bwm-about-photo { flex: 1 1 auto !important; max-width: 320px; margin: 0 auto; order: 2; }
+
+      /* Mentor image on mobile */
+      .bwm-mentor-img { display: block !important; flex: 0 0 120px !important; }
+      .bwm-team-parallax { display: none !important; }
+
+      /* Opportunity video: full section */
+      .bwm-opp-video { flex: 1 1 100% !important; max-width: 100% !important; }
+      .bwm-opp-video > div:last-child { max-width: 100%; }
+
+      /* Compensation video below headline on mobile */
+      .bwm-comp-wrap { flex-direction: column !important; }
+      .bwm-comp-video { flex: 1 1 100% !important; max-width: 340px; margin: 0 auto; order: -1; }
+
+      /* Toolkit: stack */
+      .bwm-toolkit-video { flex: 1 1 100% !important; max-width: 340px; margin: 0 auto; }
+
+      /* EllieMD different: stack */
+      .bwm-diff-right { flex: 1 1 100% !important; }
+
+      /* Image bar */
+      .bwm-img-bar { height: 160px !important; }
+      .bwm-img-bar img:nth-child(3) { display: none; }
+
+      /* Numbers grid — centered cards */
+      .bwm-numbers-grid { grid-template-columns: 1fr !important; max-width: 360px; margin-left: auto !important; margin-right: auto !important; }
+      .bwm-stat { text-align: center; background: rgba(255,255,255,0.06); border-radius: 12px; padding: 28px 20px; }
+
+      /* Team photo grid */
+      .bwm-team-grid { grid-template-columns: repeat(2, 1fr) !important; }
+
+      /* Footer: tiny on mobile */
+      .footer { padding: 28px 0 16px !important; }
+      .footer__inner { grid-template-columns: 1fr !important; gap: 20px; }
+      .footer__brand-name { font-size: 14px; }
+      .footer__tagline { font-size: 11px; }
+      .footer__nav-link { font-size: 10px; }
+      .footer__compliance-text { font-size: 9px; }
+      .footer__copyright { font-size: 8px; }
+      .footer .bwm-footer-portrait { width: 60px !important; height: 60px !important; }
+
+      .faq__question { font-size: 0.9rem; }
+
+      /* Parallax shorter */
+      .parallax-divider { height: 180px !important; min-height: 140px !important; }
+
+      /* Pullquotes */
+      blockquote { font-size: 1.15rem !important; }
+    }
+  </style>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://meiselhealth.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Build With Me",
+        "item": "https://meiselhealth.com/build-with-me.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"I'm a licensed medical provider. Am I putting my license at risk?","acceptedAnswer":{"@type":"Answer","text":"No. You share information, resources, and your personal link. All medical decisions, evaluations, and prescriptions are handled independently by licensed clinicians on the EllieMD platform."}},
+{"@type":"Question","name":"What does it cost to join?","acceptedAnswer":{"@type":"Answer","text":"$79 one-time enrollment plus $8/month for your account, tools, and resources. No quotas."}},
+{"@type":"Question","name":"Do I need a big following?","acceptedAnswer":{"@type":"Answer","text":"No. This is a relationship business. Real conversations and genuine connection, not follower count."}},
+{"@type":"Question","name":"How fast can I start earning?","acceptedAnswer":{"@type":"Answer","text":"Day one. Create your profile, upgrade to Brand Partner, and your link is live."}}
+]}
+</script>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAV
+       ============================================================ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <div class="nav__left">
+        <a href="about.html" class="nav__link">About</a>
+        <a href="longevity-quality-of-life.html" class="nav__link">Your Vitality</a>
+        <a href="glp-1-metabolic-support.html" class="nav__link">GLP-1</a>
+      </div>
+
+      <a href="/" class="nav__logo">Meisel Health</a>
+
+      <div class="nav__right">
+        <a href="build-with-me.html" class="nav__link">Build With Me</a>
+        <a href="resources/" class="nav__link">Blog</a>
+        <a href="contact.html" class="nav__cta">Book a Free Call</a>
+      </div>
+
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile overlay -->
+    <div class="nav__overlay" id="nav-overlay" aria-hidden="true">
+      <a href="about.html" class="nav__overlay-link">About</a>
+      <a href="longevity-quality-of-life.html" class="nav__overlay-link">Your Vitality</a>
+      <a href="glp-1-metabolic-support.html" class="nav__overlay-link">GLP-1</a>
+      <a href="build-with-me.html" class="nav__overlay-link">Build With Me</a>
+      <a href="resources/" class="nav__overlay-link">Blog</a>
+      <a href="contact.html" class="nav__overlay-link">Book a Free Call</a>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="about-hero" id="hero" aria-labelledby="bwm-hero-heading">
+    <div class="about-hero__content">
+      <p class="label label--with-rule hero-reveal hero-reveal--label">Meisel Health</p>
+      <h1 id="bwm-hero-heading" class="about-hero__headline hero-reveal hero-reveal--h1-line1" style="text-transform: uppercase;">THE FUTURE OF HEALTH IS HERE. <span style="font-style: italic; text-transform: none;">Build it with me.</span></h1>
+      <hr class="gold-rule gold-rule--short hero-reveal hero-reveal--h1-line2">
+      <p class="about-hero__subhead hero-reveal hero-reveal--subhead">Peptides. Longevity medicine. The fastest-growing category in health. If you've been waiting for the right moment and the right mentor, this is both.</p>
+      <a href="#join" class="btn-magenta hero-reveal hero-reveal--buttons">Join the Team</a>
+    </div>
+    <div class="about-hero__image">
+      <img src="images/alissa/KVP_2922.jpeg" alt="Alissa Meisel, health coach and team leader" width="960" height="1200" style="object-position: center top;">
+    </div>
+  </section>
+
+
+  <!-- THE OPPORTUNITY -->
+  <section style="background: var(--color-cream); padding: 96px 64px;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; gap: 56px; align-items: center; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 320px;" class="reveal">
+        <h2 id="opportunity" style="text-transform: uppercase;">The opportunity</h2>
+        <p style="font-family: var(--font-body); font-size: 17px; line-height: 1.8; color: var(--color-black); margin-top: 28px;">Roughly <strong>10 million Americans</strong> are on GLP-1 therapy right now. By 2030, that number is expected to hit <strong>25 million.</strong></p>
+        <p style="font-family: var(--font-body); font-size: 17px; line-height: 1.8; color: var(--color-black); margin-top: 16px;">This isn't a wave. It's a permanent shift in how people lose weight and manage their health. And right now, the window to build a business inside it is wide open.</p>
+      </div>
+      <div class="bwm-opp-video" style="flex: 0 0 260px;" class="reveal">
+        <p style="font-family: var(--font-label); font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-olive-dark); margin-bottom: 12px; text-align: center;">Watch: Why EllieMD makes sense</p>
+        <div style="aspect-ratio: 9/16; background: var(--color-forest); border-radius: 12px; overflow: hidden; position: relative;">
+          <img src="images/alissa/Alissa_leaning.JPG" alt="Alissa Meisel explaining why EllieMD makes sense" width="600" height="1067" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.4;" loading="lazy">
+          <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <div style="width: 56px; height: 56px; border-radius: 50%; border: 2px solid var(--color-gold); display: flex; align-items: center; justify-content: center;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--color-gold)" stroke="none"><polygon points="8,5 20,12 8,19"/></svg>
+            </div>
+            <span style="font-family: var(--font-label); font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-gold); margin-top: 12px;">Watch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ABOUT ME -->
+  <section style="background: var(--color-cream-deep); padding: 96px 64px;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; gap: 56px; align-items: center; flex-wrap: wrap;">
+      <div class="bwm-about-photo reveal">
+        <img src="images/alissa/weightloss.jpeg" alt="Alissa Meisel before and after her 160 pound weight loss transformation" width="800" height="800" style="width: 100%; display: block; object-fit: cover;" loading="lazy">
+      </div>
+      <div style="flex: 1; min-width: 300px;" class="reveal">
+        <p class="label label--with-rule">About Me</p>
+        <h2 id="about-alissa" style="margin-bottom: 12px;">Hi, I'm Alissa.</h2>
+        <p style="font-family: var(--font-display); font-size: clamp(18px, 2vw, 22px); line-height: 1.3; letter-spacing: -0.01em; margin-bottom: 24px;"><strong>I tried everything. Then I found the science no one had bothered to explain.</strong></p>
+        <div style="font-family: var(--font-body); font-size: 16px; line-height: 1.8; color: var(--color-black);">
+          <p>Every diet with a name. Calorie counting that took over my brain. Workouts that wrecked my joints. I was morbidly obese, not because I lacked discipline, but because <strong>my body would not respond to the tools I'd been given.</strong></p>
+          <p style="margin-top: 14px;">I had bariatric surgery. It worked, <em>for a while.</em> Then the food noise came back. The weight started creeping. And I thought: <strong>I cannot do this again.</strong></p>
+          <p style="margin-top: 14px;">Then I found GLP-1. Not a diet. Not a trend. <strong>Real science.</strong> For the first time in my adult life, my brain was not at war with my body. I lost 160 pounds. That fury, the clarity of a woman who spent years suffering because nobody handed her the right information, is the reason Meisel Health exists.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- WHY PARTNER WITH ME -->
+  <section style="background: var(--color-cream); padding: 96px 64px;" id="why-partner">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <div style="margin-bottom: 48px; display: flex; align-items: center; gap: 32px; flex-wrap: wrap;" class="reveal">
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+          <p class="label" style="justify-content: center;">Mentorship</p>
+          <h2 id="why-partner-heading" style="text-transform: uppercase;">Why partner with me</h2>
+        <p style="font-family: var(--font-display); font-style: italic; font-size: clamp(18px, 2vw, 22px); color: var(--color-forest-mid); margin-top: 8px;">Because mentorship matters.</p>
+        <p style="font-family: var(--font-display); font-style: italic; font-size: clamp(18px, 2vw, 22px); color: var(--color-forest-mid); margin-top: 8px;">I don't just recruit people. I walk with you.</p>
+        </div>
+        <div class="bwm-mentor-img" style="flex: 0 0 200px; overflow: hidden; border-radius: 8px; display: none;">
+          <img src="images/alissa/team1.jpeg" alt="Meisel Health team" width="800" height="200" style="width: 100%; height: 200px; object-fit: cover; object-position: center top; display: block;" loading="lazy">
+        </div>
+      </div>
+
+      <div class="bwm-cred-grid" class="reveal">
+        <div style="background: var(--color-cream-deep); padding: 32px 24px; border-top: 3px solid var(--color-gold); text-align: center;">
+          <h3 style="margin-bottom: 8px;">Board-Certified Health Coach</h3>
+        </div>
+        <div style="background: var(--color-cream-deep); padding: 32px 24px; border-top: 3px solid var(--color-gold); text-align: center;">
+          <h3 style="margin-bottom: 8px;">Master's Degree in Occupational Therapy</h3>
+        </div>
+        <div style="background: var(--color-cream-deep); padding: 32px 24px; border-top: 3px solid var(--color-gold); text-align: center;">
+          <h3 style="margin-bottom: 8px; font-size: 18px;">Clinical Training in Metabolic Health &amp; Behavioral Science</h3>
+        </div>
+      </div>
+
+      <div style="max-width: 720px; margin: 0 auto; font-family: var(--font-body); font-size: 16px; line-height: 1.8; color: var(--color-black);" class="reveal">
+        <p>I did not collect credentials for a business card. I collected them because the women I serve deserve someone who can explain the science, interpret the research, and build a protocol that accounts for the full complexity of what is happening in their bodies.</p>
+        <p style="margin-top: 14px;">I've spent more than a decade building and leading sales teams in the field. I know what it takes to start from zero, and I know what it takes to scale. I've done both.</p>
+        <blockquote style="border-left: 3px solid var(--color-gold); padding-left: 20px; margin: 32px 0; font-family: var(--font-display); font-style: italic; font-size: clamp(18px, 2vw, 22px); line-height: 1.4; color: var(--color-forest-mid);">I care deeply about helping women transform their health, their confidence, and their careers. When you join my team, you don't have to figure anything out. You just have to show up.</blockquote>
+        <div style="text-align: center; margin-top: 32px;"><a href="#join" class="btn-primary">Join the Team</a></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TEAM PARALLAX -->
+  <div class="parallax-divider bwm-team-parallax" style="background-image: url('images/alissa/team1.jpeg');" aria-hidden="true">
+    <div class="parallax-divider__overlay" style="background: rgba(7, 44, 38, 0.4);"></div>
+  </div>
+
+
+  <!-- WHAT YOU GET -->
+  <section style="background: var(--color-forest); padding: 96px 64px;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; gap: 56px; align-items: center; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 320px;" class="reveal">
+        <p class="label">Your Toolkit</p>
+        <h2 id="toolkit" style="color: var(--color-white); margin-bottom: 24px; text-transform: uppercase;">What you get on my team</h2>
+        <p style="font-family: var(--font-body); font-size: 17px; color: rgba(255,255,255,0.65); margin-bottom: 32px;">Here's what I hand you the day you join:</p>
+        <ul style="font-family: var(--font-body); font-size: 16px; line-height: 2; color: rgba(255,255,255,0.85); list-style: none; padding: 0;">
+          <li style="padding-left: 24px; position: relative; margin-bottom: 8px;"><span style="position: absolute; left: 0; color: var(--color-gold);">&#10022;</span> <strong>Custom GPTs</strong> that help you create content and messaging in YOUR voice. Not a template. Yours.</li>
+          <li style="padding-left: 24px; position: relative; margin-bottom: 8px;"><span style="position: absolute; left: 0; color: var(--color-gold);">&#10022;</span> A <strong>hooks library</strong> so you never stare at a blank screen wondering what to post.</li>
+          <li style="padding-left: 24px; position: relative; margin-bottom: 8px;"><span style="position: absolute; left: 0; color: var(--color-gold);">&#10022;</span> <strong>Marketing assets and business cards</strong> you can customize and use immediately.</li>
+          <li style="padding-left: 24px; position: relative; margin-bottom: 8px;"><span style="position: absolute; left: 0; color: var(--color-gold);">&#10022;</span> A <strong>three-way chat connection</strong> with a teammate who shares your background.</li>
+          <li style="padding-left: 24px; position: relative; margin-bottom: 8px;"><span style="position: absolute; left: 0; color: var(--color-gold);">&#10022;</span> Someone who <strong>actually shows up.</strong> Not sometimes. Every time.</li>
+        </ul>
+        <p style="font-family: var(--font-display); font-style: italic; font-size: clamp(18px, 2vw, 22px); color: var(--color-gold); margin-top: 32px; line-height: 1.4;">If you're looking for a team that pours into you every time you show up, you just found it.</p>
+
+        <!-- Social media card -->
+        <div style="background: var(--color-forest-mid); border-left: 4px solid var(--color-gold); padding: 28px 24px; margin-top: 40px;">
+          <h3 style="color: var(--color-white); margin-bottom: 8px;">"But I'm not good at social media."</h3>
+          <p style="font-family: var(--font-display); font-size: 18px; color: var(--color-gold); margin-bottom: 12px;">Good. Neither was I.</p>
+          <p style="font-family: var(--font-body); font-size: 15px; line-height: 1.75; color: rgba(255,255,255,0.75);">You don't need to be an influencer. You don't need a ring light or a content strategy. You need to be willing to share your story, honestly, imperfectly, and let people connect with the real you. I built my community by being honest about what I went through. Not by being polished. <strong style="color: var(--color-white);">By being real.</strong> That's all I'll ever ask you to do.</p>
+        </div>
+      </div>
+      <div class="bwm-toolkit-video" style="flex: 0 0 280px;" class="reveal">
+        <div style="aspect-ratio: 9/16; background: var(--color-forest-mid); border-radius: 12px; overflow: hidden; position: relative;">
+          <img src="images/alissa/team6.jpeg" alt="Meisel Health team collaboration" width="600" height="1067" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.4;" loading="lazy">
+          <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <div style="width: 56px; height: 56px; border-radius: 50%; border: 2px solid var(--color-gold); display: flex; align-items: center; justify-content: center;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--color-gold)" stroke="none"><polygon points="8,5 20,12 8,19"/></svg>
+            </div>
+            <span style="font-family: var(--font-label); font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-gold); margin-top: 12px;">Team Video</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- WHAT MAKES ELLIE MD DIFFERENT -->
+  <section style="background: var(--color-white); padding: 96px 64px;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <div style="text-align: center; margin-bottom: 56px;" class="reveal">
+        <p class="label">The Partnership</p>
+        <h2 id="ellie-different" style="font-size: clamp(40px, 6vw, 80px) !important; line-height: 0.9 !important; text-transform: uppercase;">WHAT MAKES ELLIEMD <span style="font-style: italic; text-transform: none;">different</span></h2>
+        <p style="font-family: var(--font-label); font-size: 13px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--color-olive-dark); margin-top: 16px;">Integrity. Science. Purpose.</p>
+      </div>
+
+      <div style="display: flex; gap: 48px; align-items: flex-start; flex-wrap: wrap;">
+        <!-- Left: cards -->
+        <div style="flex: 1; min-width: 320px;" class="reveal">
+          <!-- Card 1 -->
+          <div style="background: var(--color-cream); border-radius: 12px; padding: 24px 28px; display: flex; gap: 16px; align-items: flex-start; margin-bottom: 16px;">
+            <div style="flex-shrink: 0; width: 40px; height: 40px; background: var(--color-forest); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; color: var(--color-gold);">&#10022;</div>
+            <div>
+              <h3 style="font-size: 18px; margin-bottom: 6px;">Science backed</h3>
+              <p style="font-family: var(--font-body); font-size: 14px; line-height: 1.6; color: var(--color-black); opacity: 0.7;">Our partnership with a 503a pharmacy means pharmaceutical-grade quality &amp; full compliance.</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div style="background: var(--color-cream); border-radius: 12px; padding: 24px 28px; display: flex; gap: 16px; align-items: flex-start; margin-bottom: 16px;">
+            <div style="flex-shrink: 0; width: 40px; height: 40px; background: var(--color-forest); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; color: var(--color-gold);">&#10022;</div>
+            <div>
+              <h3 style="font-size: 18px; margin-bottom: 6px;">Exceptional earning potential</h3>
+              <p style="font-family: var(--font-body); font-size: 14px; line-height: 1.6; color: var(--color-black); opacity: 0.7;">Up to 40% commissions, five paydays a month, &amp; no monthly minimums.</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div style="background: var(--color-cream); border-radius: 12px; padding: 24px 28px; display: flex; gap: 16px; align-items: flex-start; margin-bottom: 16px;">
+            <div style="flex-shrink: 0; width: 40px; height: 40px; background: var(--color-forest); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; color: var(--color-gold);">&#10022;</div>
+            <div>
+              <h3 style="font-size: 18px; margin-bottom: 6px;">Purposeful mission</h3>
+              <p style="font-family: var(--font-body); font-size: 14px; line-height: 1.6; color: var(--color-black); opacity: 0.7;">We're not selling products — we're helping people feel their best &amp; live healthier lives.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: product catalog only -->
+        <div class="bwm-diff-right" style="flex: 1; min-width: 300px;" class="reveal">
+          <img src="images/resources/product-catalog.png" alt="EllieMD product catalog featuring peptide and GLP-1 protocols" width="800" height="600" style="width: 100%; display: block; border-radius: 8px;" loading="lazy">
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;" class="reveal">
+        <a href="contact.html" class="btn-primary" style="display: inline-block;">Learn How the Biz Works &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- IMAGE BAR -->
+  <div class="bwm-img-bar" style="display: flex; height: 280px; overflow: hidden;" aria-hidden="true">
+    <img src="images/resources/science.png" alt="" width="800" height="600" style="flex: 1; object-fit: cover; min-width: 0; display: block;" loading="lazy">
+    <img src="images/resources/dr.png" alt="" width="800" height="600" style="flex: 1; object-fit: cover; min-width: 0; display: block;" loading="lazy">
+    <img src="images/resources/glpbottle.png" alt="" width="800" height="600" style="flex: 1; object-fit: cover; min-width: 0; display: block;" loading="lazy">
+  </div>
+
+
+  <!-- THE NUMBERS -->
+  <section style="background: var(--color-forest); padding: 96px 64px;">
+    <div style="max-width: 900px; margin: 0 auto;" class="reveal">
+      <p class="label" style="text-align: center;">The Numbers</p>
+      <h2 id="numbers" style="color: var(--color-white); text-align: center; margin-bottom: 48px; text-transform: uppercase;">The numbers don't lie</h2>
+      <div class="bwm-numbers-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px;">
+        <div class="bwm-stat"><strong>$50B → $100B</strong><span style="font-family: var(--font-body); font-size: 0.9rem; line-height: 1.6; color: rgba(255,255,255,0.65);">Global peptide therapeutics market by 2034</span></div>
+        <div class="bwm-stat"><strong>$70B → $200B+</strong><span style="font-family: var(--font-body); font-size: 0.9rem; line-height: 1.6; color: rgba(255,255,255,0.65);">GLP-1 market projected growth by 2033</span></div>
+        <div class="bwm-stat"><strong>23% per year</strong><span style="font-family: var(--font-body); font-size: 0.9rem; line-height: 1.6; color: rgba(255,255,255,0.65);">Obesity-specific GLP-1 market growth rate</span></div>
+        <div class="bwm-stat"><strong>1 in 8 adults</strong><span style="font-family: var(--font-body); font-size: 0.9rem; line-height: 1.6; color: rgba(255,255,255,0.65);">U.S. adults who have already used a GLP-1 drug</span></div>
+        <div class="bwm-stat"><strong>40%+ of adults</strong><span style="font-family: var(--font-body); font-size: 0.9rem; line-height: 1.6; color: rgba(255,255,255,0.65);">American adults classified as clinically obese</span></div>
+        <div class="bwm-stat"><strong>$105B by 2035</strong><span style="font-family: var(--font-body); font-size: 0.9rem; line-height: 1.6; color: rgba(255,255,255,0.65);">Projected anti-obesity drug market</span></div>
+      </div>
+      <p style="font-family: var(--font-body); font-size: 17px; color: rgba(255,255,255,0.65); text-align: center; margin-top: 40px;">This is the biggest shift in women's health in a generation. And EllieMD is positioned right in the center of it.</p>
+      <h3 style="color: var(--color-gold); text-align: center; margin-top: 32px; font-size: clamp(20px, 2.5vw, 28px);">Massive growth. Massive opportunity. You're early, right where you want to be.</h3>
+    </div>
+  </section>
+
+
+  <!-- COMPENSATION -->
+  <section style="background: var(--color-cream-deep); padding-left: 64px; padding-right: 64px;">
+    <div class="bwm-comp-wrap" style="max-width: 1100px; margin: 0 auto; display: flex; gap: 56px; align-items: center; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 320px;" class="reveal">
+        <p class="label">Compensation</p>
+        <h2 id="compensation" style="text-transform: uppercase;">Compensation that rewards you</h2>
+        <p style="font-family: var(--font-label); font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-olive-dark); margin: 8px 0 28px;">Generous. Transparent. Sustainable.</p>
+        <ul style="font-family: var(--font-body); font-size: 1rem; line-height: 2; color: var(--color-black); list-style: none; padding: 0;">
+          <li style="padding-left: 24px; position: relative; margin-bottom: 4px;"><span style="position: absolute; left: 0; color: var(--color-gold);">&#10022;</span> Up to <strong>40% commission</strong> on customer orders.</li>
+          <li style="padding-left: 24px; position: relative; margin-bottom: 4px;"><span style="position: absolute; left: 0; color: var(--color-gold);">&#10022;</span> <strong>No monthly minimums</strong> — build at your own pace.</li>
+          <li style="padding-left: 24px; position: relative; margin-bottom: 4px;"><span style="position: absolute; left: 0; color: var(--color-gold);">&#10022;</span> Paid on your own orders.</li>
+          <li style="padding-left: 24px; position: relative; margin-bottom: 4px;"><span style="position: absolute; left: 0; color: var(--color-gold);">&#10022;</span> <strong>Five paydays per month</strong> + over $1,500 in one-time bonuses.</li>
+          <li style="padding-left: 24px; position: relative; margin-bottom: 4px;"><span style="position: absolute; left: 0; color: var(--color-gold);">&#10022;</span> Recognition rewards: designer jewelry, luggage, purses, and more.</li>
+        </ul>
+        <p style="font-family: var(--font-body); font-size: 1rem; line-height: 1.8; color: var(--color-black); margin-top: 24px;">You can do this part-time, full-time, or alongside your current career — and actually see results that match the effort you put in.</p>
+      </div>
+      <div class="bwm-comp-video" style="flex: 0 0 260px;" class="reveal">
+        <div style="aspect-ratio: 9/16; background: var(--color-forest); border-radius: 12px; overflow: hidden; position: relative;">
+          <img src="images/alissa/team5.jpeg" alt="EllieMD compensation overview" width="600" height="1067" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.4;" loading="lazy">
+          <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <div style="width: 56px; height: 56px; border-radius: 50%; border: 2px solid var(--color-gold); display: flex; align-items: center; justify-content: center;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--color-gold)" stroke="none"><polygon points="8,5 20,12 8,19"/></svg>
+            </div>
+            <span style="font-family: var(--font-label); font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-gold); margin-top: 12px;">Watch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TEAM CULTURE -->
+  <section style="background: var(--color-cream); padding: 96px 64px;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <div style="text-align: center; margin-bottom: 48px;" class="reveal">
+        <p class="label">Our Team Culture</p>
+        <h2 id="team-culture" style="text-transform: uppercase;">You'll never build alone</h2>
+        <p style="font-family: var(--font-label); font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-olive-dark); margin-top: 8px;">Warm. Real. Built to win together.</p>
+      </div>
+      <div class="bwm-team-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 48px;" class="reveal">
+        <img src="images/alissa/team2.jpeg" alt="Meisel Health team" width="800" height="800" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;" loading="lazy">
+        <img src="images/alissa/team4.jpeg" alt="Meisel Health team" width="800" height="800" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;" loading="lazy">
+        <img src="images/alissa/team5.jpeg" alt="Meisel Health team" width="800" height="800" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;" loading="lazy">
+        <img src="images/alissa/team6.jpeg" alt="Meisel Health team" width="800" height="800" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;" loading="lazy">
+      </div>
+      <div style="max-width: 680px; margin: 0 auto; font-family: var(--font-body); font-size: 16px; line-height: 1.8; color: var(--color-black);" class="reveal">
+        <p>Have a question at 10pm on a Tuesday? Drop it in the group. Someone's going to answer.</p>
+        <p style="margin-top: 14px;">This team is nurses and therapists and moms and corporate refugees and side-hustlers and full-time builders — and somehow all of it works. Because everyone helps everyone. Not as a slogan. As a daily practice.</p>
+        <p style="margin-top: 14px;">Got a friend who's curious but skeptical? I'll connect her with a teammate who shares her background and is already building. Someone who gets her life.</p>
+        <p style="font-family: var(--font-display); font-style: italic; font-size: clamp(18px, 2vw, 22px); color: var(--color-forest-mid); margin-top: 28px; line-height: 1.4;">One of the warmest, most real groups of women I've ever been part of.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOR MEDICAL & NON-MEDICAL -->
+  <section style="background: var(--color-forest); padding: 96px 64px;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; gap: 56px; align-items: center; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 320px;" class="reveal">
+        <p class="label">For Everyone</p>
+        <h2 id="for-everyone" style="color: var(--color-white); margin-bottom: 12px; text-transform: uppercase;">A fit for every background</h2>
+        <p style="font-family: var(--font-label); font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-gold); margin-bottom: 28px;">For medical &amp; non-medical professionals</p>
+        <div style="display: flex; gap: 28px; flex-wrap: wrap;">
+          <div style="flex: 1; min-width: 240px; border-left: 4px solid var(--color-gold); padding-left: 20px; margin-bottom: 20px;">
+            <h3 style="color: var(--color-white); margin-bottom: 8px; font-size: 18px;">Medical professionals</h3>
+            <p style="font-family: var(--font-body); font-size: 15px; line-height: 1.75; color: rgba(255,255,255,0.75);">Integrate peptides into your existing practice and expand what you offer your patients.</p>
+          </div>
+          <div style="flex: 1; min-width: 240px; border-left: 4px solid var(--color-gold); padding-left: 20px; margin-bottom: 20px;">
+            <h3 style="color: var(--color-white); margin-bottom: 8px; font-size: 18px;">Non-medical professionals</h3>
+            <p style="font-family: var(--font-body); font-size: 15px; line-height: 1.75; color: rgba(255,255,255,0.75);">Partner with EllieMD's telehealth network. Our licensed providers handle all medical oversight. You don't need a clinical license to do this.</p>
+          </div>
+        </div>
+        <p style="font-family: var(--font-body); font-size: 16px; color: rgba(255,255,255,0.65); margin-top: 16px;">Ellie bridges the gap between science and entrepreneurship. You bring the passion. We bring the rest.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- BETH GRAVES TESTIMONIAL -->
+  <section style="background: var(--color-cream); padding: 80px 64px;">
+    <div style="max-width: 700px; margin: 0 auto; text-align: center;" class="reveal">
+      <blockquote style="border: none; padding: 0; margin: 0 0 16px;">
+        <p style="font-family: var(--font-display); font-style: italic; font-size: clamp(20px, 2.5vw, 24px); line-height: 1.5; color: var(--color-black);">There is a steadiness to Alissa that people are drawn to. She doesn't force growth, she creates the environment for it. She leads with a grounded, servant-hearted presence that makes people feel seen, supported, and safe to grow.</p>
+      </blockquote>
+      <cite style="font-family: var(--font-label); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-olive-dark); font-style: normal;">Beth Graves</cite>
+    </div>
+  </section>
+
+
+  <!-- FINAL CTA -->
+  <section style="background: var(--color-forest); padding: 120px 64px; text-align: center;" id="join" class="grain-overlay">
+    <div style="max-width: 640px; margin: 0 auto;" class="reveal">
+      <p class="label">Take the First Step</p>
+      <h2 id="join-cta" style="color: var(--color-white); margin-bottom: 20px; text-transform: uppercase;">Ready to join the movement?</h2>
+      <p style="font-family: var(--font-body); font-size: 17px; color: rgba(255,255,255,0.65); line-height: 1.75; margin-bottom: 40px;">Build income, impact, and purpose from anywhere.</p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn-magenta">Join the Team</a>
+        <a href="contact.html" class="btn-ghost" style="border-color: rgba(255,255,255,0.4); color: var(--color-white);">Have Questions? Let's Talk</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAQS -->
+  <section style="background: var(--color-cream); padding: 96px 64px;" id="faqs">
+    <div style="max-width: 720px; margin: 0 auto;">
+      <div style="text-align: center; margin-bottom: 48px;" class="reveal">
+        <p class="label">FAQs</p>
+        <h2 id="faq" style="text-transform: uppercase;">Frequently asked questions</h2>
+      </div>
+      <div class="faq__list">
+        <div class="faq__item reveal"><button class="faq__question" aria-expanded="false">I'm a licensed medical provider. Am I putting my license at risk?<span class="faq__icon">+</span></button><div class="faq__answer"><p class="answer-block">No. You share information, resources, and your personal link. All medical decisions, evaluations, and prescriptions are handled independently by licensed clinicians on the EllieMD platform.</p></div></div>
+        <div class="faq__item reveal"><button class="faq__question" aria-expanded="false">What is PV?<span class="faq__icon">+</span></button><div class="faq__answer"><p class="answer-block">Personal Volume is a point-based system that keeps commission tracking consistent across products. Once you're in, I'll walk you through it. Simpler than it sounds.</p></div></div>
+        <div class="faq__item reveal"><button class="faq__question" aria-expanded="false">I don't feel like I know enough yet. Can I still join?<span class="faq__icon">+</span></button><div class="faq__answer"><p class="answer-block">Yes. That's what the education is for. Expert-led trainings, weekly calls, and a full library of recorded sessions you can revisit anytime.</p></div></div>
+        <div class="faq__item reveal"><button class="faq__question" aria-expanded="false">How does ordering work?<span class="faq__icon">+</span></button><div class="faq__answer"><p class="answer-block">Customers order through your personalized link to your EllieMD storefront. They browse products and access education to make an informed decision.</p></div></div>
+        <div class="faq__item reveal"><button class="faq__question" aria-expanded="false">Can I order peptides as a Brand Partner?<span class="faq__icon">+</span></button><div class="faq__answer"><p class="answer-block">Yes. Same medical evaluation as any customer. Your personal orders also count toward your Personal Volume.</p></div></div>
+        <div class="faq__item reveal"><button class="faq__question" aria-expanded="false">How fast can I start earning?<span class="faq__icon">+</span></button><div class="faq__answer"><p class="answer-block">Day one. Create your profile, upgrade to Brand Partner, and your link is live. I walk you through every step.</p></div></div>
+        <div class="faq__item reveal"><button class="faq__question" aria-expanded="false">Do I need a big following?<span class="faq__icon">+</span></button><div class="faq__answer"><p class="answer-block">No. This is a relationship business. Real conversations and genuine connection — not follower count.</p></div></div>
+        <div class="faq__item reveal"><button class="faq__question" aria-expanded="false">When do I get paid?<span class="faq__icon">+</span></button><div class="faq__answer"><p class="answer-block">Every Thursday at 20% commission on the previous week's sales. Higher tiers (up to 40%), bonuses, and team commissions are paid mid-month.</p></div></div>
+        <div class="faq__item reveal"><button class="faq__question" aria-expanded="false">Are taxes taken out?<span class="faq__icon">+</span></button><div class="faq__answer"><p class="answer-block">No. Earnings are paid in full. You operate as an independent contractor (1099).</p></div></div>
+        <div class="faq__item reveal"><button class="faq__question" aria-expanded="false">Do I have to make my own marketing materials?<span class="faq__icon">+</span></button><div class="faq__answer"><p class="answer-block">No. Full library of assets and resources — customize with your link and photos and you're set.</p></div></div>
+        <div class="faq__item reveal"><button class="faq__question" aria-expanded="false">What does it cost to join?<span class="faq__icon">+</span></button><div class="faq__answer"><p class="answer-block">$79 one-time enrollment + $8/month for your account, tools, and resources. No quotas.</p></div></div>
+        <div class="faq__item reveal"><button class="faq__question" aria-expanded="false">Do customers pay subscription fees?<span class="faq__icon">+</span></button><div class="faq__answer"><p class="answer-block">No membership or subscription fees to order.</p></div></div>
+        <div class="faq__item reveal"><button class="faq__question" aria-expanded="false">What peptides does EllieMD offer?<span class="faq__icon">+</span></button><div class="faq__answer"><p class="answer-block">Growing product line. Coming soon: Semax, Selank, testosterone, HRT, and clinician-guided diagnostic testing.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer grain-overlay" id="book" role="contentinfo">
+    <!-- Alissa photo above footer content -->
+    <div style="max-width: var(--container-max); margin: 0 auto 32px; padding: 0 var(--section-pad-x); display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+      <img src="images/alissa/footer-portrait.jpeg" alt="Alissa Meisel, founder of Meisel Health" class="bwm-footer-portrait" width="80" height="80" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; object-position: center top; border: 2px solid var(--color-gold);" loading="lazy">
+      <div>
+        <p style="font-family: var(--font-display); font-size: 18px; color: var(--color-white); margin-bottom: 4px;">Alissa Meisel</p>
+        <p style="font-family: var(--font-body); font-size: 12px; color: rgba(255,255,255,0.55); line-height: 1.4;">Board-Certified Health Coach &middot; Master's-Trained OT &middot; Founder, Meisel Health</p>
+      </div>
+    </div>
+
+    <div class="footer__inner">
+      <!-- Left: Brand -->
+      <div class="footer__brand">
+        <p class="footer__brand-name">Meisel Health</p>
+        <p class="footer__tagline">Real answers. Real protocols. For women who are done guessing.</p>
+        <!-- TODO: Alissa to provide social media URLs for Instagram, Facebook, TikTok -->
+        <div class="footer__social" aria-label="Social media links">
+          <a href="#" class="footer__social-icon" aria-label="Follow Meisel Health on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="footer__social-icon" aria-label="Follow Meisel Health on Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="footer__social-icon" aria-label="Follow Meisel Health on TikTok">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Middle: Navigation -->
+      <div class="footer__nav">
+        <p class="footer__nav-heading">Navigate</p>
+        <ul class="footer__nav-list">
+          <li><a href="about.html" class="footer__nav-link">About</a></li>
+          <li><a href="glp-1-metabolic-support.html" class="footer__nav-link">GLP-1 &amp; Metabolic Support</a></li>
+          <li><a href="longevity-quality-of-life.html" class="footer__nav-link">Longevity &amp; Quality of Life</a></li>
+          <li><a href="work-with-me.html" class="footer__nav-link">Work With Me</a></li>
+          <li><a href="build-with-me.html" class="footer__nav-link">Build With Me</a></li>
+          <li><a href="contact.html" class="footer__nav-link">Book a Free Call</a></li>
+        </ul>
+      </div>
+
+      <!-- Right: Compliance -->
+      <div class="footer__compliance">
+        <p class="footer__compliance-heading">Compliance</p>
+        <p class="footer__compliance-text">The information provided on this website is for educational purposes only and is not intended to diagnose, treat, cure, or prevent any disease or medical condition. Content is not a substitute for professional medical advice. Always consult your physician or qualified healthcare provider before starting any new health protocol, supplement, or medication. Individual results may vary. Meisel Health does not prescribe medications or provide medical treatment.</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__bottom-rule"></div>
+      <p class="footer__copyright">&copy; 2025 Meisel Health. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
