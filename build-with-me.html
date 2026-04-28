@@ -19,20 +19,26 @@
   <meta property="og:title" content="Build With Me — Meisel Health">
   <meta property="og:description" content="A coaching track for health professionals who want to build their own practice is coming to Meisel Health. Book a free call to get on the list.">
   <meta property="og:url" content="https://meiselhealth.com/build-with-me.html">
-  <meta property="og:image" content="https://meiselhealth.com/images/alissa/homepage.jpg">
+  <meta property="og:image" content="https://meiselhealth.com/images/og/homepage.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Build With Me — Meisel Health">
   <meta name="twitter:description" content="A coaching track for health professionals who want to build their own practice is coming to Meisel Health.">
-  <meta name="twitter:image" content="https://meiselhealth.com/images/alissa/homepage.jpg">
+  <meta name="twitter:image" content="https://meiselhealth.com/images/og/homepage.jpg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://api.fontshare.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+
+  <!-- Preload LCP image -->
+  <link rel="preload" as="image" type="image/webp" href="images/alissa/alissa2.webp">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/tokens.css">
@@ -285,7 +291,7 @@
       <div class="nav__right">
         <a href="build-with-me.html" class="nav__link">Build With Me</a>
         <a href="resources/" class="nav__link">Blog</a>
-        <a href="contact.html" class="nav__cta">Book a Free Call</a>
+        <a href="https://calendly.com/alissameiselhealth/30min" target="_blank" rel="noopener" class="nav__cta">Book a Free Call</a>
       </div>
 
       <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
@@ -302,7 +308,7 @@
       <a href="glp-1-metabolic-support.html" class="nav__overlay-link">GLP-1</a>
       <a href="build-with-me.html" class="nav__overlay-link">Build With Me</a>
       <a href="resources/" class="nav__overlay-link">Blog</a>
-      <a href="contact.html" class="nav__overlay-link">Book a Free Call</a>
+      <a href="https://calendly.com/alissameiselhealth/30min" target="_blank" rel="noopener" class="nav__overlay-link">Book a Free Call</a>
     </div>
   </nav>
 
@@ -317,7 +323,7 @@
       <a href="#join" class="btn-magenta hero-reveal hero-reveal--buttons">Join the Team</a>
     </div>
     <div class="about-hero__image">
-      <img src="images/alissa/KVP_2922.jpeg" alt="Alissa Meisel, health coach and team leader" width="960" height="1200" style="object-position: center top;">
+      <picture><source srcset="images/alissa/alissa2.webp" type="image/webp"><img src="images/alissa/alissa2.jpg" alt="Alissa Meisel, founder of Meisel Health and EllieMD partner" width="1400" height="2104" style="object-position: center top;"></picture>
     </div>
   </section>
 
@@ -333,7 +339,7 @@
       <div class="bwm-opp-video" style="flex: 0 0 260px;" class="reveal">
         <p style="font-family: var(--font-label); font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-olive-dark); margin-bottom: 12px; text-align: center;">Watch: Why EllieMD makes sense</p>
         <div style="aspect-ratio: 9/16; background: var(--color-forest); border-radius: 12px; overflow: hidden; position: relative;">
-          <img src="images/alissa/Alissa_leaning.JPG" alt="Alissa Meisel explaining why EllieMD makes sense" width="600" height="1067" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.4;" loading="lazy">
+          <picture><source srcset="images/alissa/Alissa_leaning.webp" type="image/webp"><img src="images/alissa/Alissa_leaning.JPG" alt="Alissa Meisel explaining why EllieMD makes sense" width="600" height="1067" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.4;" loading="lazy"></picture>
           <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <div style="width: 56px; height: 56px; border-radius: 50%; border: 2px solid var(--color-gold); display: flex; align-items: center; justify-content: center;">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--color-gold)" stroke="none"><polygon points="8,5 20,12 8,19"/></svg>
@@ -350,7 +356,7 @@
   <section style="background: var(--color-cream-deep); padding: 96px 64px;">
     <div style="max-width: 1100px; margin: 0 auto; display: flex; gap: 56px; align-items: center; flex-wrap: wrap;">
       <div class="bwm-about-photo reveal">
-        <img src="images/alissa/weightloss.jpeg" alt="Alissa Meisel before and after her 160 pound weight loss transformation" width="800" height="800" style="width: 100%; display: block; object-fit: cover;" loading="lazy">
+        <picture><source srcset="images/alissa/weightloss.webp" type="image/webp"><img src="images/alissa/weightloss.jpeg" alt="Alissa Meisel before and after her 160 pound weight loss transformation" width="800" height="800" style="width: 100%; display: block; object-fit: cover;" loading="lazy"></picture>
       </div>
       <div style="flex: 1; min-width: 300px;" class="reveal">
         <p class="label label--with-rule">About Me</p>
@@ -377,19 +383,22 @@
         <p style="font-family: var(--font-display); font-style: italic; font-size: clamp(18px, 2vw, 22px); color: var(--color-forest-mid); margin-top: 8px;">I don't just recruit people. I walk with you.</p>
         </div>
         <div class="bwm-mentor-img" style="flex: 0 0 200px; overflow: hidden; border-radius: 8px; display: none;">
-          <img src="images/alissa/team1.jpeg" alt="Meisel Health team" width="800" height="200" style="width: 100%; height: 200px; object-fit: cover; object-position: center top; display: block;" loading="lazy">
+          <picture><source srcset="images/alissa/team1.webp" type="image/webp"><img src="images/alissa/team1.jpeg" alt="Meisel Health team" width="800" height="200" style="width: 100%; height: 200px; object-fit: cover; object-position: center top; display: block;" loading="lazy"></picture>
         </div>
       </div>
 
       <div class="bwm-cred-grid" class="reveal">
         <div style="background: var(--color-cream-deep); padding: 32px 24px; border-top: 3px solid var(--color-gold); text-align: center;">
-          <h3 style="margin-bottom: 8px;">Board-Certified Health Coach</h3>
+          <h3 style="margin-bottom: 0;">Clinically Trained</h3>
+          <p style="font-family: var(--font-body); font-size: 14px; line-height: 1.7; color: rgba(15, 15, 15, 0.75); margin-top: 12px;">Master of Science in Occupational Therapy. Licensed OTR/L. Years of clinical and rehabilitation experience helping people create sustainable change.</p>
         </div>
         <div style="background: var(--color-cream-deep); padding: 32px 24px; border-top: 3px solid var(--color-gold); text-align: center;">
-          <h3 style="margin-bottom: 8px;">Master's Degree in Occupational Therapy</h3>
+          <h3 style="margin-bottom: 0;">Academically Grounded</h3>
+          <p style="font-family: var(--font-body); font-size: 14px; line-height: 1.7; color: rgba(15, 15, 15, 0.75); margin-top: 12px;">Dual degrees in business and health sciences. Board-certified health and wellness coach with a strong foundation in both behavior change and whole-person health.</p>
         </div>
         <div style="background: var(--color-cream-deep); padding: 32px 24px; border-top: 3px solid var(--color-gold); text-align: center;">
-          <h3 style="margin-bottom: 8px; font-size: 18px;">Clinical Training in Metabolic Health &amp; Behavioral Science</h3>
+          <h3 style="margin-bottom: 0;">I've Lived It</h3>
+          <p style="font-family: var(--font-body); font-size: 14px; line-height: 1.7; color: rgba(15, 15, 15, 0.75); margin-top: 12px;">I've lost 150 pounds, rebuilt my health, and built this business from the ground up. I mentor women from lived experience, not theory alone.</p>
         </div>
       </div>
 
@@ -404,7 +413,7 @@
 
 
   <!-- TEAM PARALLAX -->
-  <div class="parallax-divider bwm-team-parallax" style="background-image: url('images/alissa/team1.jpeg');" aria-hidden="true">
+  <div class="parallax-divider bwm-team-parallax" style="background-image: url('images/alissa/team1.webp');" aria-hidden="true">
     <div class="parallax-divider__overlay" style="background: rgba(7, 44, 38, 0.4);"></div>
   </div>
 
@@ -434,7 +443,7 @@
       </div>
       <div class="bwm-toolkit-video" style="flex: 0 0 280px;" class="reveal">
         <div style="aspect-ratio: 9/16; background: var(--color-forest-mid); border-radius: 12px; overflow: hidden; position: relative;">
-          <img src="images/alissa/team6.jpeg" alt="Meisel Health team collaboration" width="600" height="1067" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.4;" loading="lazy">
+          <picture><source srcset="images/alissa/team6.webp" type="image/webp"><img src="images/alissa/team6.jpeg" alt="Meisel Health team collaboration" width="600" height="1067" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.4;" loading="lazy"></picture>
           <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <div style="width: 56px; height: 56px; border-radius: 50%; border: 2px solid var(--color-gold); display: flex; align-items: center; justify-content: center;">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--color-gold)" stroke="none"><polygon points="8,5 20,12 8,19"/></svg>
@@ -487,7 +496,7 @@
 
         <!-- Right: product catalog only -->
         <div class="bwm-diff-right" style="flex: 1; min-width: 300px;" class="reveal">
-          <img src="images/resources/product-catalog.png" alt="EllieMD product catalog featuring peptide and GLP-1 protocols" width="800" height="600" style="width: 100%; display: block; border-radius: 8px;" loading="lazy">
+          <picture><source srcset="images/alissa/IMG_1615.webp" type="image/webp"><img src="images/alissa/IMG_1615.jpg" alt="Alissa Meisel and Hanieh, EllieMD team partners, in matching orange outfits" width="1109" height="1661" style="width: 100%; display: block; border-radius: 8px;" loading="lazy"></picture>
         </div>
       </div>
 
@@ -500,9 +509,9 @@
 
   <!-- IMAGE BAR -->
   <div class="bwm-img-bar" style="display: flex; height: 280px; overflow: hidden;" aria-hidden="true">
-    <img src="images/resources/science.png" alt="" width="800" height="600" style="flex: 1; object-fit: cover; min-width: 0; display: block;" loading="lazy">
-    <img src="images/resources/dr.png" alt="" width="800" height="600" style="flex: 1; object-fit: cover; min-width: 0; display: block;" loading="lazy">
-    <img src="images/resources/glpbottle.png" alt="" width="800" height="600" style="flex: 1; object-fit: cover; min-width: 0; display: block;" loading="lazy">
+    <picture><source srcset="images/resources/science.webp" type="image/webp"><img src="images/resources/science.png" alt="" width="800" height="600" style="flex: 1; object-fit: cover; min-width: 0; display: block;" loading="lazy"></picture>
+    <picture><source srcset="images/resources/dr.webp" type="image/webp"><img src="images/resources/dr.png" alt="" width="800" height="600" style="flex: 1; object-fit: cover; min-width: 0; display: block;" loading="lazy"></picture>
+    <picture><source srcset="images/resources/glpbottle.webp" type="image/webp"><img src="images/resources/glpbottle.png" alt="" width="800" height="600" style="flex: 1; object-fit: cover; min-width: 0; display: block;" loading="lazy"></picture>
   </div>
 
 
@@ -543,7 +552,7 @@
       </div>
       <div class="bwm-comp-video" style="flex: 0 0 260px;" class="reveal">
         <div style="aspect-ratio: 9/16; background: var(--color-forest); border-radius: 12px; overflow: hidden; position: relative;">
-          <img src="images/alissa/team5.jpeg" alt="EllieMD compensation overview" width="600" height="1067" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.4;" loading="lazy">
+          <picture><source srcset="images/alissa/team5.webp" type="image/webp"><img src="images/alissa/team5.jpeg" alt="EllieMD compensation overview" width="600" height="1067" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.4;" loading="lazy"></picture>
           <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <div style="width: 56px; height: 56px; border-radius: 50%; border: 2px solid var(--color-gold); display: flex; align-items: center; justify-content: center;">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--color-gold)" stroke="none"><polygon points="8,5 20,12 8,19"/></svg>
@@ -565,10 +574,10 @@
         <p style="font-family: var(--font-label); font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-olive-dark); margin-top: 8px;">Warm. Real. Built to win together.</p>
       </div>
       <div class="bwm-team-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 48px;" class="reveal">
-        <img src="images/alissa/team2.jpeg" alt="Meisel Health team" width="800" height="800" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;" loading="lazy">
-        <img src="images/alissa/team4.jpeg" alt="Meisel Health team" width="800" height="800" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;" loading="lazy">
-        <img src="images/alissa/team5.jpeg" alt="Meisel Health team" width="800" height="800" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;" loading="lazy">
-        <img src="images/alissa/team6.jpeg" alt="Meisel Health team" width="800" height="800" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;" loading="lazy">
+        <picture><source srcset="images/alissa/team2.webp" type="image/webp"><img src="images/alissa/team2.jpeg" alt="Meisel Health team" width="800" height="800" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;" loading="lazy"></picture>
+        <picture><source srcset="images/alissa/team4.webp" type="image/webp"><img src="images/alissa/team4.jpeg" alt="Meisel Health team" width="800" height="800" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;" loading="lazy"></picture>
+        <picture><source srcset="images/alissa/team5.webp" type="image/webp"><img src="images/alissa/team5.jpeg" alt="Meisel Health team" width="800" height="800" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;" loading="lazy"></picture>
+        <picture><source srcset="images/alissa/team6.webp" type="image/webp"><img src="images/alissa/team6.jpeg" alt="Meisel Health team" width="800" height="800" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;" loading="lazy"></picture>
       </div>
       <div style="max-width: 680px; margin: 0 auto; font-family: var(--font-body); font-size: 16px; line-height: 1.8; color: var(--color-black);" class="reveal">
         <p>Have a question at 10pm on a Tuesday? Drop it in the group. Someone's going to answer.</p>
@@ -621,8 +630,8 @@
       <h2 id="join-cta" style="color: var(--color-white); margin-bottom: 20px; text-transform: uppercase;">Ready to join the movement?</h2>
       <p style="font-family: var(--font-body); font-size: 17px; color: rgba(255,255,255,0.65); line-height: 1.75; margin-bottom: 40px;">Build income, impact, and purpose from anywhere.</p>
       <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-        <a href="contact.html" class="btn-magenta">Join the Team</a>
-        <a href="contact.html" class="btn-ghost" style="border-color: rgba(255,255,255,0.4); color: var(--color-white);">Have Questions? Let's Talk</a>
+        <a href="https://calendly.com/alissameiselhealth/30min" target="_blank" rel="noopener" class="btn-magenta">Join the Team</a>
+        <a href="https://calendly.com/alissameiselhealth/30min" target="_blank" rel="noopener" class="btn-ghost" style="border-color: rgba(255,255,255,0.4); color: var(--color-white);">Have Questions? Let's Talk</a>
       </div>
     </div>
   </section>
@@ -660,7 +669,7 @@
   <footer class="footer grain-overlay" id="book" role="contentinfo">
     <!-- Alissa photo above footer content -->
     <div style="max-width: var(--container-max); margin: 0 auto 32px; padding: 0 var(--section-pad-x); display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-      <img src="images/alissa/footer-portrait.jpeg" alt="Alissa Meisel, founder of Meisel Health" class="bwm-footer-portrait" width="80" height="80" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; object-position: center top; border: 2px solid var(--color-gold);" loading="lazy">
+      <picture><source srcset="images/alissa/footer-portrait.webp" type="image/webp"><img src="images/alissa/footer-portrait.jpeg" alt="Alissa Meisel, founder of Meisel Health" class="bwm-footer-portrait" width="80" height="80" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; object-position: center top; border: 2px solid var(--color-gold);" loading="lazy"></picture>
       <div>
         <p style="font-family: var(--font-display); font-size: 18px; color: var(--color-white); margin-bottom: 4px;">Alissa Meisel</p>
         <p style="font-family: var(--font-body); font-size: 12px; color: rgba(255,255,255,0.55); line-height: 1.4;">Board-Certified Health Coach &middot; Master's-Trained OT &middot; Founder, Meisel Health</p>
@@ -695,7 +704,7 @@
           <li><a href="longevity-quality-of-life.html" class="footer__nav-link">Longevity &amp; Quality of Life</a></li>
           <li><a href="work-with-me.html" class="footer__nav-link">Work With Me</a></li>
           <li><a href="build-with-me.html" class="footer__nav-link">Build With Me</a></li>
-          <li><a href="contact.html" class="footer__nav-link">Book a Free Call</a></li>
+          <li><a href="https://calendly.com/alissameiselhealth/30min" target="_blank" rel="noopener" class="footer__nav-link">Book a Free Call</a></li>
         </ul>
       </div>
 

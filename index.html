@@ -19,20 +19,26 @@
   <meta property="og:title" content="Meisel Health — Real Answers for Women Over 40">
   <meta property="og:description" content="Premium health coaching for women over 40. GLP-1 therapy, peptide protocols, and longevity medicine from a Board-Certified Health Coach who rebuilt her own health first.">
   <meta property="og:url" content="https://meiselhealth.com/">
-  <meta property="og:image" content="https://meiselhealth.com/images/alissa/homepage.jpg">
+  <meta property="og:image" content="https://meiselhealth.com/images/og/homepage.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Meisel Health — Real Answers for Women Over 40">
   <meta name="twitter:description" content="Premium health coaching for women over 40. GLP-1 therapy, peptide protocols, and longevity medicine.">
-  <meta name="twitter:image" content="https://meiselhealth.com/images/alissa/homepage.jpg">
+  <meta name="twitter:image" content="https://meiselhealth.com/images/og/homepage.jpg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://api.fontshare.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+
+  <!-- Preload LCP image -->
+  <link rel="preload" as="image" type="image/webp" href="images/alissa/hero.webp">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/tokens.css">
@@ -49,14 +55,14 @@
     "name": "Meisel Health",
     "url": "https://meiselhealth.com",
     "logo": "https://meiselhealth.com/images/brand/logo-400.jpg",
-    "image": "https://meiselhealth.com/images/alissa/homepage.jpg",
+    "image": "https://meiselhealth.com/images/og/homepage.jpg",
     "description": "Premium health coaching practice for women over 40, specializing in GLP-1 therapy guidance, peptide protocols, and longevity medicine.",
     "founder": {
       "@type": "Person",
       "name": "Alissa Meisel",
       "jobTitle": "Board-Certified Health Coach",
       "description": "Board-Certified Health Coach and Master's-trained Occupational Therapist who lost 160 pounds and rebuilt her health before founding Meisel Health.",
-      "image": "https://meiselhealth.com/images/alissa/homepage.jpg"
+      "image": "https://meiselhealth.com/images/og/homepage.jpg"
     },
     "knowsAbout": ["GLP-1 therapy for women","Peptide protocols for women over 40","Longevity medicine","Metabolic health coaching","NAD+ therapy","Sermorelin for women","Health coaching business development"],
     "sameAs": []
@@ -73,7 +79,7 @@
     "worksFor": {"@type":"HealthBusiness","name":"Meisel Health","url":"https://meiselhealth.com"},
     "knowsAbout": ["GLP-1 receptor agonist therapy","Peptide therapy for women","Longevity and anti-aging protocols","Metabolic health optimization","Occupational therapy","Health coaching business development"],
     "description": "Alissa Meisel is a Board-Certified Health Coach and Master's-trained Occupational Therapist who transformed her own health by losing 160 pounds. She founded Meisel Health to help women over 40 access real information about GLP-1 therapy, peptide protocols, and longevity medicine.",
-    "image": "https://meiselhealth.com/images/alissa/homepage.jpg",
+    "image": "https://meiselhealth.com/images/og/homepage.jpg",
     "sameAs": []
   }
   </script>
@@ -196,7 +202,7 @@
     </div>
 
     <div class="home-hero__image">
-      <img src="images/alissa/hero.jpg" alt="Alissa Meisel, Board-Certified Health Coach and founder of Meisel Health, standing confidently in an elegant hallway" width="960" height="1200">
+      <picture><source srcset="images/alissa/hero.webp" type="image/webp"><img src="images/alissa/hero.jpg" alt="Alissa Meisel, Board-Certified Health Coach and founder of Meisel Health, standing confidently in an elegant hallway" width="960" height="1200"></picture>
     </div>
   </section>
 
@@ -222,7 +228,7 @@
   <section class="about" id="about" aria-labelledby="about-heading">
     <div class="about__photo">
       <div class="about__photo-inner">
-        <img src="images/alissa/weightloss.jpeg" alt="Alissa Meisel's weight loss transformation, representing her personal journey that inspired Meisel Health" width="933" height="1400" loading="lazy">
+        <picture><source srcset="images/alissa/weightloss.webp" type="image/webp"><img src="images/alissa/weightloss.jpeg" alt="Alissa Meisel's weight loss transformation, representing her personal journey that inspired Meisel Health" width="933" height="1400" loading="lazy"></picture>
       </div>
     </div>
 
@@ -310,7 +316,7 @@
       <!-- Door 1: Your Weight -->
       <a href="glp-1-metabolic-support.html" class="doors__card reveal">
         <div class="doors__card-photo">
-          <img src="images/resources/43.jpg" alt="GLP-1 and metabolic support for sustainable weight management at Meisel Health" width="1366" height="768" loading="lazy">
+          <picture><source srcset="images/resources/43.webp" type="image/webp"><img src="images/resources/43.jpg" alt="GLP-1 and metabolic support for sustainable weight management at Meisel Health" width="1366" height="768" loading="lazy"></picture>
         </div>
         <p class="doors__card-label">Your Weight</p>
         <h3 class="doors__card-title">GLP-1, metabolic truth, and the end of "just try harder"</h3>
@@ -320,7 +326,7 @@
       <!-- Door 2: Your Vitality -->
       <a href="longevity-quality-of-life.html" class="doors__card reveal">
         <div class="doors__card-photo">
-          <img src="images/resources/yoga-stretch.jpg" alt="Woman doing a seated yoga stretch in a bright studio, representing Meisel Health's longevity and quality of life program with peptide protocols" width="1366" height="768" loading="lazy">
+          <picture><source srcset="images/resources/yoga-stretch.webp" type="image/webp"><img src="images/resources/yoga-stretch.jpg" alt="Woman doing a seated yoga stretch in a bright studio, representing Meisel Health's longevity and quality of life program with peptide protocols" width="1366" height="768" loading="lazy"></picture>
         </div>
         <p class="doors__card-label">Your Vitality</p>
         <h3 class="doors__card-title">Peptides, longevity protocols, and feeling like yourself again</h3>
@@ -330,7 +336,7 @@
       <!-- Door 3: Your Business -->
       <a href="build-with-me.html" class="doors__card reveal">
         <div class="doors__card-photo">
-          <img src="images/alissa/team2.jpeg" alt="Meisel Health team collaborating, representing the Build With Me health coaching business program" width="1200" height="800" loading="lazy">
+          <picture><source srcset="images/alissa/team2.webp" type="image/webp"><img src="images/alissa/team2.jpeg" alt="Meisel Health team collaborating, representing the Build With Me health coaching business program" width="1200" height="800" loading="lazy"></picture>
         </div>
         <p class="doors__card-label">Your Business</p>
         <h3 class="doors__card-title">Build the practice that lets you do this work full time</h3>
@@ -343,7 +349,7 @@
   <!-- ============================================================
        PARALLAX DIVIDER 2 — Between Doors and Partner Bar
        ============================================================ -->
-  <div class="parallax-divider parallax-divider--tall" style="background-image: url('images/alissa/team1.jpeg');" aria-hidden="true">
+  <div class="parallax-divider parallax-divider--tall" style="background-image: url('images/alissa/team1.webp');" aria-hidden="true">
     <div class="parallax-divider__overlay parallax-divider__overlay--gradient"></div>
   </div>
 
@@ -393,7 +399,7 @@
     <div class="resources__grid">
       <a href="resources/what-are-peptides.html" class="resources__card reveal">
         <div class="resources__card-photo">
-          <img src="images/resources/syringe-minimal.jpg" alt="Minimal clinical syringe and petri dish representing peptide therapy protocols for women over 40" width="1366" height="768" loading="lazy">
+          <picture><source srcset="images/resources/syringe-minimal.webp" type="image/webp"><img src="images/resources/syringe-minimal.jpg" alt="Minimal clinical syringe and petri dish representing peptide therapy protocols for women over 40" width="1366" height="768" loading="lazy"></picture>
         </div>
         <div class="resources__card-body">
           <p class="resources__card-label">Resource Guide</p>
@@ -404,7 +410,7 @@
 
       <a href="resources/what-is-glp1.html" class="resources__card reveal">
         <div class="resources__card-photo">
-          <img src="images/resources/scale-flatlay.jpg" alt="Scale with dumbbells and apple representing GLP-1 metabolic health information for women over 40" width="1366" height="768" loading="lazy">
+          <picture><source srcset="images/resources/scale-flatlay.webp" type="image/webp"><img src="images/resources/scale-flatlay.jpg" alt="Scale with dumbbells and apple representing GLP-1 metabolic health information for women over 40" width="1366" height="768" loading="lazy"></picture>
         </div>
         <div class="resources__card-body">
           <p class="resources__card-label">Resource Guide</p>
@@ -415,7 +421,7 @@
 
       <a href="resources/nad-plus-for-women.html" class="resources__card reveal">
         <div class="resources__card-photo">
-          <img src="images/resources/yoga-mountain.jpg" alt="Woman doing yoga on a mountain overlooking lush green landscape, representing NAD+ longevity and vitality for women over 40" width="1366" height="768" loading="lazy">
+          <picture><source srcset="images/resources/yoga-mountain.webp" type="image/webp"><img src="images/resources/yoga-mountain.jpg" alt="Woman doing yoga on a mountain overlooking lush green landscape, representing NAD+ longevity and vitality for women over 40" width="1366" height="768" loading="lazy"></picture>
         </div>
         <div class="resources__card-body">
           <p class="resources__card-label">Resource Guide</p>
@@ -445,7 +451,7 @@
 
       <div class="lead-magnet__right reveal">
         <div class="lead-magnet__photo">
-          <img src="images/alissa/lead-magnet.jpg" alt="Alissa Meisel smiling warmly, representing the approachable expert guidance in the free longevity protocols guide" width="720" height="960" loading="lazy">
+          <picture><source srcset="images/alissa/lead-magnet.webp" type="image/webp"><img src="images/alissa/lead-magnet.jpg" alt="Alissa Meisel smiling warmly, representing the approachable expert guidance in the free longevity protocols guide" width="720" height="960" loading="lazy"></picture>
         </div>
         <div class="lead-magnet__guide">
           <p class="lead-magnet__guide-brand">Meisel Health</p>
@@ -461,7 +467,7 @@
   <!-- ============================================================
        PARALLAX — The Next Thirty Years
        ============================================================ -->
-  <div class="parallax-divider parallax-divider--quote" style="background-image: url('images/alissa/lifestyle-13.jpg');" aria-hidden="true">
+  <div class="parallax-divider parallax-divider--quote" style="background-image: url('images/alissa/lifestyle-13.webp');" aria-hidden="true">
     <div class="parallax-divider__overlay" style="background: rgba(7, 44, 38, 0.85);"></div>
     <div class="parallax-divider__text parallax-divider__text--large reveal">
       <p style="color: #fff; text-shadow: 0 2px 20px rgba(0,0,0,0.5);">The next thirty years<br><span style="color: var(--color-gold);">start here.</span></p>

@@ -19,20 +19,27 @@
   <meta property="og:title" content="Book a Call — Meisel Health">
   <meta property="og:description" content="Book a free call with Alissa Meisel. No pressure, no pitch. Just an honest conversation about where you are and what might help.">
   <meta property="og:url" content="https://meiselhealth.com/contact.html">
-  <meta property="og:image" content="https://meiselhealth.com/images/alissa/homepage.jpg">
+  <meta property="og:image" content="https://meiselhealth.com/images/og/homepage.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Book a Call — Meisel Health">
   <meta name="twitter:description" content="Book a free call with Alissa Meisel. No pressure, no pitch. Just an honest conversation about where you are and what might help.">
-  <meta name="twitter:image" content="https://meiselhealth.com/images/alissa/homepage.jpg">
+  <meta name="twitter:image" content="https://meiselhealth.com/images/og/homepage.jpg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://api.fontshare.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+
+  <!-- Calendly preconnect -->
+  <link rel="preconnect" href="https://assets.calendly.com" crossorigin>
+  <link rel="preconnect" href="https://calendly.com" crossorigin>
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/tokens.css">
@@ -120,19 +127,15 @@
         No pressure. No pitch. Just an honest conversation about where you are and what might help.
       </p>
 
-      <!-- ============================================================
-           JOTFORM EMBED PLACEHOLDER
-           Alissa: Replace this entire div with your JotForm embed code.
-           See the handoff guide for setup instructions.
-           ============================================================ -->
-      <div style="border: 2px dashed var(--color-gold); background: rgba(184, 153, 62, 0.06); padding: 64px 32px; margin: 0 auto 48px; max-width: 640px;">
-        <p style="font-family: var(--font-label); font-size: 14px; font-weight: 500; color: var(--color-gold); text-transform: uppercase; letter-spacing: 0.1em; line-height: 1.6; margin: 0;">
-          APPOINTMENT SCHEDULER
+      <!-- Calendly inline widget -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/alissameiselhealth/30min" style="min-width:320px; height:700px; margin:0 auto 48px; max-width:100%;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <noscript>
+        <p style="font-family: var(--font-body); font-size: 16px; color: var(--color-black); max-width: 540px; margin: 0 auto 48px; line-height: 1.7;">
+          The scheduler requires JavaScript.
+          <a href="https://calendly.com/alissameiselhealth/30min" target="_blank" rel="noopener" style="color: var(--color-forest); text-decoration: underline;">Book on Calendly directly.</a>
         </p>
-        <p style="font-family: var(--font-label); font-size: 13px; color: var(--color-stone); line-height: 1.6; margin: 12px 0 0 0;">
-          Paste your JotForm embed code here.<br>See handoff guide for setup instructions.
-        </p>
-      </div>
+      </noscript>
 
       <p style="font-family: var(--font-body); font-size: 15px; color: var(--color-black); opacity: 0.55; line-height: 1.6;">
         Prefer email? Reach out at <a href="mailto:alissa@meiselhealth.com" style="color: var(--color-forest); text-decoration: underline;">alissa@meiselhealth.com</a>

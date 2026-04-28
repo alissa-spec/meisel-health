@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Vercel
+.vercel
+
+# Editor
+.claude/
